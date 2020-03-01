@@ -1,0 +1,47 @@
+body {
+    height: 100vh;
+    padding: 0px;
+    margin: 0px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    flex-grow: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+content {
+    flex-grow: 4;
+    display: flex;
+}
+
+content .listToDo li{
+    list-style: none;
+    display: block;
+    margin: 20px 0px;
+}
+
+content .listToDo .remove-button {
+    position: absolute;
+    right: 10%;
+    padding: 8px;
+    border: none;
+    color: red;
+}
+content .listToDo li.taskCompleted {
+    text-decoration: line-through;
+}
+
+
+content .listToDo li:hover {
+    border-bottom: 1px solid #dedede;
+    box-shadow: inset;
+}
+
+.hide {
+    display: none;
+}
+
