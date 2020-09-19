@@ -1,6 +1,6 @@
 import React from 'react';
 import Task from './Task';
-const ToDoAPIURL = "/api/todo";
+const ToDoAPIURL = "/api/todo/";
 
 export default class ToDoList extends React.Component {
     constructor(props) {
