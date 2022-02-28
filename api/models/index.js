@@ -5,3 +5,4 @@ mongoose.connect(process.env.MONGOLINK, { useNewUrlParser: true, useUnifiedTopol
 mongoose.Promise = Promise;
 
 module.exports.toDoModel = require('./toDo');
+module.exports.UserModel = require('./users.js');

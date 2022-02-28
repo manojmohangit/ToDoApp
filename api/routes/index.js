@@ -1,15 +1,15 @@
 var express = require('express');
 var router = express.Router();
-var helper = require('../helpers/toDoQueryHelper');
+var toDoHelper = require('../helpers/toDoQueryHelper');
 
 
 router.route('/')
-    .get(helper.getToDoTask)
-    .post(helper.createToDo);
+    .get(toDoHelper.getToDoTask)
+    .post(toDoHelper.createToDo);
 
 router.route('/:toDoId')
-    .get(helper.getToDoById)
-    .put(helper.updateToDo)
-    .delete(helper.deleteToDo);
+    .get(toDoHelper.getToDoById)
+    .put(toDoHelper.updateToDo)
+    .delete(toDoHelper.deleteToDo);
 
 module.exports = router;
