@@ -1,10 +1,12 @@
 body {
     margin: 0px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #121212;
+    color: #80deea;
 }
 
 body #root .App {
-    min-height: 100vh;
+    min-height: calc(100vh - 53px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,4 +75,56 @@ input:focus::-webkit-input-placeholder {
 
 .task-completed {
     text-decoration: line-through;
+}
+
+#form-login {
+    padding: 16px;
+    border-radius: 8px;
+    backgroud: #1a1616;
+    -webkit-box-shadow: 1px 2px 7px 6px #3a3636; 
+    box-shadow: 1px 2px 7px 6px #3a3636;
+}
+
+#form-login label{
+    display: block;
+}
+
+#form-login input{
+    margin: 8px 0px;
+    width: auto;
+}
+
+#form-login h2 {
+    text-align: center;
+}
+
+.form-group.submit-button {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: right;
+}
+
+nav li a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: #dedede;
+}
+
+.text-center {
+    text-align: center;
+}
+
+nav {
+    background: #212121;
+    padding: 8px;
 }

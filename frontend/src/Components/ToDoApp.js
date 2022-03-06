@@ -1,6 +1,8 @@
 import React from 'react';
 import ToDoList from './ToDoList';
+import Navbar from './navbar';
 const ToDoAPIURL = "/api/todo";
+
 
 export default class ToDoApp extends React.Component {
     
@@ -42,9 +44,13 @@ export default class ToDoApp extends React.Component {
     render() {
         return (
             <>
-                <header> <h2>To Do App Using MERN Stack</h2> </header>
-                <input type="text" id="new-task-input" placeholder="Enter your Task" value={this.state.newTaskInput} onChange={this.inputChangeHandler} onKeyPress={this.submitTask}/>
-                <ToDoList ref={this.toDOListRef}/>
+                <Navbar/>
+                <div className="App">
+                    
+                    <header> <h2>To Do App Using MERN Stack</h2> </header>
+                    <input type="text" id="new-task-input" placeholder="Enter your Task" value={this.state.newTaskInput} onChange={this.inputChangeHandler} onKeyPress={this.submitTask}/>
+                    <ToDoList ref={this.toDOListRef}/>
+                </div>
             </>
         )
     }
