@@ -12,8 +12,9 @@ function Navbar() {
         logout(dispatch) //call the logout action
         navigate('/');
     }
-    
+
     if(token) {
+        
         return (
             <>
                 <nav>

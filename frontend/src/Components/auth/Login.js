@@ -18,7 +18,7 @@ export default function Login(props) {
         }
 
         try {
-            let response = await loginUser(dispatch, user) //loginUser action makes the request and handles all the neccessary state changes
+            let response = await loginUser(dispatch, user) // loginUser action makes the request and handles all the neccessary state changes
             if (!response.token) return
             navigate('/'); //navigate to dashboard on success
         } catch (error) {

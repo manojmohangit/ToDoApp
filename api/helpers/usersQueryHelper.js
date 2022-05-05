@@ -72,7 +72,8 @@ exports.loginUser = async function(req, res) {
 
                                 return res.json({
                                     message: "Success",
-                                    token: "Beared: "+token
+                                    token: "Beared: "+token,
+                                    user: user.username
                                 })
                         }
                     )
